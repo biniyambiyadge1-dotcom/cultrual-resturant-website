@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <h1>CULTURAL RESTURANT</h1>
+          <img src="image.jpg" alt="">
+        <nav class="filter-buttons">
+        <button onclick="filterMenu('Home')">Home page</button>
+        <button onclick="filterMenu('breakfast')">Breakfast</button>
+        <button onclick="filterMenu('lunch')">Lunch</button>
+        <button onclick="filterMenu('drinks')">Drinks</button>
+        <button onclick="filterMenu('contact')">contact</button>
+    </nav>
+    </header>
+    <div class="menu-item Home" >
+        <div class="read">
+            <h2>Home page</h2>
+             <h3>"Welcome to our restaurant!
+                 We offer authentic Ethiopian flavors blended with modern hospitality."
+                </h3>
+            <ul type="square">
+                <h3>foods</h3>
+                <li>pasta</li>
+                <li>berger</li>
+                <li>Special Beyaynetu</li>
+                <li>Meat Firfir</li>
+                <h3>Drinks</h3>
+                <li>coffee</li>
+                <li>wine</li>
+            </ul>
+        </div>
+
+    </div>
+    <main class="menu-container">
+        <div class="menu-item lunch">
+            <img src="specal.png" alt="Special Beyaynetu">
+            <div class="item-info">
+                <h3>Special Beyaynetu</h3>
+                <p class="price">250 ETB</p>
+                <p class="description">A delicious variety of traditional fasting dishes.
+                     colorful platter featuring a diverse sampling of spicy lentil stews, chickpeas,
+                     and seasonal vegetables, all served atop fresh, tangy injera.
+                </p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="menu-item lunch">
+            <img src="pasta1.png" alt="pasta">
+            <div class="item-info">
+                <h3></h3>
+                <p class="price">140 ETB</p>
+                <p class="description">Perfectly al dente pasta tossed in a vibrant,
+                    spiced tomato sauce with garlic and traditional herbs, 
+                    offering a comforting fusion of flavors..</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+         <div class="menu-item breakfast">
+            <img src="burger.png" alt="">
+            <div class="item-info">
+                <h3>berger</h3>
+                <p class="price">400 ETB</p>
+                <p class="description"> A juicy, seasoned beef patty topped with fresh lettuce, tomatoes, and onions, 
+                    served on a toasted bun for a classic, hearty meal..</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            </div>
+        <div class="menu-item breakfast">
+            <img src="MEET.png" alt="Meat Firfir">
+            <div class="item-info">
+                <h3>Beef Firfir</h3>
+                <p class="price">180 ETB</p>
+                <p class="description">Savory pieces of injera sautéed with tender beef cubes, 
+                    simmered in a spicy berbere sauce and enriched with herbed clarified butter (niter kibbeh).
+                </p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+        <div class="menu-item drinks">
+            <img src="coffee.png" alt="Coffee">
+            <div class="item-info">
+                <h3>Traditional Coffee</h3>
+                <p class="price">40 ETB</p>
+                <p class="description">Freshly roasted beans, slow-brewed in a traditional clay 
+                    pot (jebena) to produce a bold, aromatic experience served in small ceramic cups.
+                </p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+           <div class="menu-item drinks">
+            <img src="wine.png" alt="wine">
+            <div class="item-info">
+                <h3>Traditional wine</h3>
+                <p class="price">500 ETB</p>
+                <p class="description"> A rich, fermented honey wine infused with gesho leaves,
+                 offering a unique balance of floral sweetness and a subtle earthy finish..</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </main>
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Place Your Order</h2>
+        <p id="selectedItemName"></p>
+        <form id="orderForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <textarea placeholder="Delivery Address" required></textarea>
+          <label for="payment-method">Select Payment Method</label>
+          <select id="payment-method" onchange="showAccountDetails()" >
+         <option value="">Select </option>
+          <option value="telebirr">Telebirr</option>
+         <option value="cbe">CBE (Commercial Bank of Ethiopia)</option>
+         </select>
+         <br>
+         <input type="account" placeholder="Account" required>
+         <br>
+         <input type="number" placeholder="amount" required>
+            <button type="submit" class="submit-order">Confirm Order</button>
+        </form>
+    </div>
+   </div>
+   <div class="menu-item contact">
+    <div class="mean">
+      <form action="">
+        <h2>contact</h2>
+        <div class="form-group">
+        <label for="name"> Name</label>
+        <input type="text" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+         <label for="phone">phone </label>
+        <input type="tel" placeholder="phone number" required>
+     </div>
+     <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+        <label for="message">message</label>
+        <textarea name="message" placeholder="message" class="done"></textarea>
+        </div>
+        <input type="submit" value="send" class="title">
+      </form>
+    </div>
+   </div>
+    <footer>
+        <p>&copy; 2026 Cultural Restaurant - All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

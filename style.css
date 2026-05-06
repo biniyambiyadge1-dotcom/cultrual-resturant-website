@@ -1,0 +1,208 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background:#666;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    
+}
+ .read{
+     background-color: darkseagreen;
+     text-align: center;
+     text-decoration: none;
+ }
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffbe33;
+}
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.filter-buttons button {
+    padding: 10px 25px;
+    color: #ffbe33;
+    border: 2px solid #ffbe33;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.filter-buttons button:hover {
+    background-color: blue;
+    color: white;
+}
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.menu-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }  
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item-info {
+    padding: 20px;
+}
+
+.item-info h3 {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    color: #ffbe33;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.order-btn {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #222;
+    color: white;
+    margin-top: 50px;
+}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px; top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#orderForm input, #orderForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-order {
+    background-color: #ffbe33;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.mean {
+    background-color: coral;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 20px auto; 
+    text-align: left; 
+    color: white; 
+}
+.mean h2 {
+    text-align: center;
+    color: blue;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.mean input, .mean textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+.title {
+    background-color: green;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.title:hover {
+    background-color: darkgreen;
+}
